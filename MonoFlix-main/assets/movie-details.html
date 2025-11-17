@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details</title>
+
+ 
+  <link rel="shortcut icon" href="/images/icon.png" type="image/svg+xml">
+
+
+  <link rel="stylesheet" href="/style/style.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="#top">
+
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="/index.html" class="logo">
+        <img src="#" alt="MonoFlix logo">
+      </a>
+
+      <div class="header-actions">
+
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <button class="btn btn-primary">Sign in</button>
+
+      </div>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="./index.html" class="logo">
+            <img src="#" alt="MonoFlix logo">
+          </a>
+
+          <button class="menu-close-btn" data-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="/index.html" class="navbar-link">Movies</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Events</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Cinemas</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Club</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Rent</a>
+          </li>
+
+        </ul>
+
+
+        <ul class="navbar-social-list">
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <section class="movie-detail">
+        <div class="container">
+
+          <figure class="movie-detail-banner">
+
+            <img src="#" alt="Movie Poster">
+
+            <button class="play-btn">
+              <ion-icon name="play-circle-outline" id="image-play"></ion-icon>
+            </button>
+
+          </figure>
+
+          <div class="movie-detail-content">
+
+            <p class="detail-subtitle"></p>
+
+            <h1 class="h1 detail-title">
+              <strong></strong>
+            </h1>
+
+            <div class="meta-wrapper">
+
+              <div class="badge-wrapper">
+                <div class="badge badge-fill"></div>
+
+                <div class="badge badge-outline"></div>
+              </div>
+
+              <div class="ganre-wrapper">
+                <a href="#"></a>
+
+                <a href="#"></a>
+
+                <a href="#"></a>
+
+                <a href="#"></a>
+              </div>
+
+              <div class="date-time">
+
+                <div>
+                  <ion-icon name="calendar-outline"></ion-icon>
+
+                  <time datetime="2021"></time>
+                </div>
+              <div>
+                <ion-icon name="time-outline"></ion-icon>
+                <time class="movie-duration" datetime=""></time>
+              </div>
+              </div>
+
+            </div>
+
+            <p class="storyline">
+              A bank teller called Guy realizes he is a background character in an open world video game called Free
+              City that will
+              soon go offline.
+            </p>
+
+            <div class="details-actions">
+
+              <button class="share">
+                <ion-icon name="share-social"></ion-icon>
+
+                <span>Share</span>
+              </button>
+
+              <div class="title-wrapper">
+                <p>Watch Trailer</p>
+              </div>
+
+            <button class="btn btn-primary" id="trailer-btn">
+              <ion-icon name="play"></ion-icon>
+              <span>Watch Now</span>
+            </button>
+
+
+
+
+        </div>
+      </section>
+
+            <section class="upcoming">
+        <div class="container">
+          <div class="flex-wrapper">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Upcoming Movies</h2>
+            </div>
+          </div>
+          <ul class="movies-list has-scrollbar" id="upcoming-movies-list">
+          </ul>
+        </div>
+      </section>
+
+      
+
+    </article>
+  </main>
+
+
+
+
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand-wrapper">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" alt="Filmlane logo">
+          </a>
+
+          <ul class="footer-list">
+
+          <li>
+            <a href="/index.html" class="navbar-link">Movies</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Events</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Cinemas</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Club</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Rent</a>
+          </li>
+
+
+          </ul>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="quicklink-wrapper">
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink-link">Faq</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Help center</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Terms of use</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Privacy</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2025 <a href="#">Viola</a>. All Rights Reserved
+        </p>
+
+        <img src="./assets/images/footer-bottom-img.png" alt="Online banking companies logo" class="footer-bottom-img">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+  <script src="/js/script.js"></script>
+  <script src="/js/movies.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+  const trailerBtn = document.getElementById("trailer-btn");
+if (trailerBtn) {
+  trailerBtn.addEventListener("click", () => {
+    if (movie.trailer) {
+      window.open(movie.trailer, "_blank"); 
+    } else {
+      alert("Trailer not available");
+    }
+  });
+}
+  const trailer1Btn = document.getElementById("image-play");
+if (trailer1Btn) {
+  trailer1Btn.addEventListener("click", () => {
+    if (movie.trailer) {
+      window.open(movie.trailer, "_blank"); 
+    } else {
+      alert("Trailer not available");
+    }
+  });
+}
+
+const params = new URLSearchParams(window.location.search);
+const movieId = parseInt(params.get("id"));
+
+const movie = movies.find(m => m.id === movieId);
+
+if (movie) {
+  document.querySelector(".detail-title").textContent = movie.title;
+
+  if (document.querySelector(".detail-subtitle")) {
+    document.querySelector(".detail-subtitle").textContent = movie.subtitle || "";
+  }
+
+  if (document.querySelector(".storyline")) {
+    document.querySelector(".storyline").textContent = movie.description;
+  }
+
+  const posterImg = document.querySelector(".movie-detail-banner img");
+  if (posterImg) {
+    posterImg.src = movie.image;
+    posterImg.alt = movie.title + " poster";
+  }
+
+  const badgeFill = document.querySelector(".badge-fill");
+  if (badgeFill) badgeFill.textContent = movie.rating;
+
+  const badgeOutline = document.querySelector(".badge-outline");
+  if (badgeOutline) badgeOutline.textContent = movie.quality || "HD";
+
+  const yearTime = document.querySelector(".date-time time[datetime]");
+  if (yearTime) yearTime.textContent = movie.year;
+
+  const genreWrapper = document.querySelector(".ganre-wrapper");
+  if (genreWrapper) {
+    genreWrapper.innerHTML = movie.genre.map(g => `<a href="#">${g}</a>`).join(", ");
+  }
+
+  const streamingTitle = document.querySelector(".title-wrapper .title");
+  if (streamingTitle) streamingTitle.textContent = movie.streaming || "";
+
+  const duration = document.querySelector(".movie-duration");
+  if (duration) duration.textContent = movie.duration; 
+}
+
+</script>
+
+</body>
+
+</html>
