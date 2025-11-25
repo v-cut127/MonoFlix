@@ -29,7 +29,7 @@
       <div class="overlay" data-overlay></div>
 
       <a href="/index.html" class="logo">
-        <img src="#" alt="MonoFlix logo">
+        <img src="/images/logo2.png" alt="MonoFlix logo" style="width: 30%;">
       </a>
 
       <div class="header-actions">
@@ -243,7 +243,7 @@
         <div class="footer-brand-wrapper">
 
           <a href="./index.html" class="logo">
-            <img src="./assets/images/logo.svg" alt="MonoFlix logo">
+            <img src="/images/logo2.png" alt="MonoFlix logo" style="width: 40%;">
           </a>
 
           <ul class="footer-list">
@@ -253,19 +253,19 @@
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Events</a>
+            <a href="assets/events.html" class="navbar-link">Events</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Cinemas</a>
+            <a href="assets/cinemas.html" class="navbar-link">Cinemas</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Club</a>
+            <a href="assets/club.html" class="navbar-link">Club</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Rent</a>
+            <a href="assets/rent.html" class="navbar-link">Rent</a>
           </li>
 
 
@@ -400,7 +400,7 @@ if (movie) {
     posterImg.src = movie.image;
     posterImg.alt = movie.title + " poster";
   }
-
+ 
   const badgeFill = document.querySelector(".badge-fill");
   if (badgeFill) badgeFill.textContent = movie.rating;
 
@@ -420,6 +420,17 @@ if (movie) {
 
   const duration = document.querySelector(".movie-duration");
   if (duration) duration.textContent = movie.duration; 
+  const movieDetailSection = document.querySelector(".movie-detail");
+
+if (movie && movieDetailSection) {
+  movieDetailSection.style.background = `
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)),
+    url("${movie.background_image}") no-repeat center/cover
+  `;
+  movieDetailSection.style.backgroundSize = "cover";
+  movieDetailSection.style.backgroundPosition = "center";
+}
+
 }
 
 </script>
