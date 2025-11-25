@@ -9,7 +9,7 @@
   --gunmetal-1: hsl(229, 15%, 21%);
   --gunmetal-2: hsl(216, 22%, 18%);
   --gainsboro: hsl(0, 7%, 88%);
-  --red: hsl(0, 100%, 60%);
+ --red: hsl(0, 100%, 60%);
   --xiketic: hsl(253, 21%, 13%);
   --gray-x: hsl(0, 0%, 74%);
   --white: hsl(0, 100%, 100%);
@@ -717,18 +717,15 @@ body.active { overflow: hidden; }
   opacity: 1;
   visibility: visible;
 }
-
-
-
-
-
 .movie-detail {
-  background: url("../images/movie-detail-bg.png") no-repeat;
+  background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)),no-repeat center/cover;
   background-size: cover;
   background-position: center;
   padding-top: 160px;
   padding-bottom: var(--section-padding);
 }
+
 
 .movie-detail-banner {
   position: relative;
@@ -981,7 +978,6 @@ body.active { overflow: hidden; }
     right: 2px;
     bottom: 2px;
   }
-
 
 
   .footer-brand-wrapper .logo { margin: 0; }
@@ -1242,4 +1238,3 @@ body.active { overflow: hidden; }
   width: 150px;
   border-radius: 10px;
 }
-
