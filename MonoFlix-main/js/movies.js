@@ -7,6 +7,7 @@ const movies = [
     rating: "NR",
     genre: ["Action", "Adventure", "Fantasy"],
     image: "/images/1.jpg",
+    background_image: "/images/avatar_bg.jpg",
     description:
       "Jake Sully and Neytiri face a new threat as Pandora's balance is once again endangered by human greed and vengeance.",
     trailer:"https://youtu.be/nb_fFj_0rq8?si=PSoURyMgZPYP12WT"
@@ -19,6 +20,7 @@ const movies = [
     rating: "8.0",
     genre: ["Drama"],
     image: "/images/7.jpg",
+    background_image: "/images/perfectdays_bg.jpg",
     description:
       "A Tokyo toilet cleaner finds beauty and peace in his daily routines while quietly reflecting on his past.",
     trailer:"https://www.youtube.com/watch?v=QzZBbX5A1FA&t=2s"
@@ -31,6 +33,7 @@ const movies = [
     rating: "8.3",
     genre: ["Drama", "Romance"],
     image: "/images/6.jpg",
+    background_image: "/images/pastlives_bg.jpeg",
     description:
       "Two childhood friends are separated when one moves from South Korea to the U.S., reuniting decades later to confront destiny and lost love.",
     trailer:"https://www.youtube.com/watch?v=kA244xewjcI"
@@ -43,6 +46,7 @@ const movies = [
     rating: "8.0",
     genre: ["Comedy", "Drama", "Music", "Romance"],
     image: "/images/9.jpeg",
+    background_image: "/images/lalaland_bg.jpg",
     description:
       "A jazz musician and an aspiring actress fall in love while struggling to make it in Los Angeles.",
     trailer:"https://www.youtube.com/watch?v=76ULWmMfHcU"
@@ -55,6 +59,7 @@ const movies = [
     rating: "7.9",
     genre: ["Mystery", "Thriller", "Horror"],
     image: "/images/8.jpg",
+    background_image: "/images/cure_bg.jpg",
     description:
       "A detective investigates a series of murders linked by a mysterious hypnotist manipulating ordinary people into killing.",
     trailer:"https://www.youtube.com/watch?v=Kr0LzE4VRkQ"
@@ -67,6 +72,7 @@ const movies = [
     rating: "8.3",
     genre: ["Crime", "Drama"],
     image: "/images/10.jpg",
+    background_image: "/images/scarface_bg.jpg",
     description:
       "Tony Montana rises from Cuban refugee to Miami drug kingpin, consumed by greed and paranoia.",
     trailer:"https://www.youtube.com/watch?v=lZMIrD36MG8"
@@ -79,6 +85,7 @@ const movies = [
     rating: "8.5",
     genre: ["Drama", "Music"],
     image: "/images/11.webp",
+    background_image: "/images/whiplash_bg.jpg",
     description:
       "A young drummer enrolls at a cutthroat music conservatory, where his perfectionist instructor pushes him beyond limits.",
     trailer:"https://www.youtube.com/watch?v=Q7kZy3T6vRM"
@@ -91,6 +98,7 @@ const movies = [
     rating: "8.6",
     genre: ["Comedy", "Drama", "Thriller"],
     image: "/images/5.jpg",
+    background_image: "/images/parasite_bg.jpg",
     description:
       "A poor family infiltrates a wealthy household, leading to an unexpected chain of deception and chaos.",
     trailer:"https://www.youtube.com/watch?v=PhPROyE0OaM"
@@ -103,6 +111,7 @@ const movies = [
     rating: "8.2",
     genre: ["Mystery", "Thriller"],
     image: "/images/12.jpg",
+    background_image: "/images/shutterisland_bg.jpg",
     description:
       "A U.S. Marshal investigates a psychiatric facility on Shutter Island, uncovering dark secrets about himself and the institution.",
     trailer:"https://www.youtube.com/watch?v=v8yrZSkKxTA"
@@ -115,6 +124,7 @@ const movies = [
     rating: "NR",
     genre: ["Action", "Science Fiction", "Thriller"],
     image: "/images/2.jpg",
+    background_image: "/images/predator_bg.jpg",
     description:
       "A group of mercenaries must survive the ultimate hunt in the scorching deserts of the Badlands as a new Predator emerges.",
     trailer:"https://www.youtube.com/watch?v=43R9l7EkJwE"
@@ -127,6 +137,7 @@ const movies = [
     rating: "NR",
     genre: ["Action", "Sci-Fi", "Thriller"],
     image: "/images/3.jpg",
+    background_image: "/images/runningman_bg.jpg",
     description:
       "A man joins a game show in which contestants, allowed to go anywhere in the world, are pursued by hunters hired to kill them.",
     trailer:"https://www.youtube.com/watch?v=ByXAgJU_X2M"
@@ -139,6 +150,7 @@ const movies = [
     rating: "NR",
     genre: ["Animation", "Adventure", "Comedy", "Family"],
     image: "/images/4.jpg",
+    background_image: "/images/zootopia_bg.jpg",
     description:
       "Judy Hopps and Nick Wilde reunite to solve a new case that threatens the harmony between predators and prey in Zootopia.",
     trailer:"https://www.youtube.com/watch?v=BjkIOU5PhyQ"
