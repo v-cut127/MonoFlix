@@ -1,7 +1,7 @@
 # 🎬 MonoFlix
 
 MonoFlix is a modern movie ticket booking website designed for a smooth and simple movie browsing and booking experience.  
-Right now, the project includes the **Home Page (Movies section)**,**Movie Details**,**Sign In and Register**.
+Right now, the project includes the **Home Page (Movies section)**, **Movie Details**, **Sign In and Register**.
 
 ---
 
