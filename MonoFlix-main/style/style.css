@@ -322,8 +322,10 @@ body.active { overflow: hidden; }
 
 .header.active {
   background: var(--eerie-black);
-  padding-block: 20px;
+  padding-block: 10px;
 }
+
+.header .logo img{ width: 20%;}
 
 .header .container {
   display: flex;
@@ -331,7 +333,7 @@ body.active { overflow: hidden; }
   align-items: center;
 }
 
-.header-actions { display: none; }
+
 
 .menu-open-btn {
   color: var(--white);
@@ -484,9 +486,6 @@ body.active { overflow: hidden; }
 }
 
 
-
-
-
 .service {
   background: url("../images/service-bg.jpg") no-repeat;
   background-size: cover;
@@ -602,7 +601,9 @@ body.active { overflow: hidden; }
   margin-bottom: 50px;
 }
 
-
+.footer .logo img{
+  width: 40%;
+}
 .footer-top {
   background: url("/images/footer-bg.jpg") no-repeat;
   background-size: cover;
@@ -724,13 +725,14 @@ body.active { overflow: hidden; }
   background-position: center;
   padding-top: 235px;
   padding-bottom: var(--section-padding);
+  margin-top: -20px;
 }
 
 
 .movie-detail-banner {
   position: relative;
   background: var(--gunmetal-1);
-  max-width: 300px;
+  max-width: 350px;
   margin-inline: auto;
   border-radius: 6px;
   overflow: hidden;
@@ -755,12 +757,7 @@ body.active { overflow: hidden; }
 
 .play-btn:hover { background: hsla(0, 0%, 0%, 0.25); }
 
-.detail-subtitle {
-  font-size: var(--fs-5);
-  color: var(--red);
-  font-weight: var(--fw-700);
-  margin-bottom: 10px;
-}
+
 
 .detail-title { margin-bottom: 20px; }
 
@@ -919,9 +916,6 @@ body.active { overflow: hidden; }
   }
 
 
-
-
-
   .container { max-width: 720px; }
 
 
@@ -937,22 +931,7 @@ body.active { overflow: hidden; }
 
   .header-actions .btn-primary { display: none; }
 
-  .search-btn {
-    position: relative;
-    color: var(--white);
-  }
 
-  .search-btn ion-icon { --ionicon-stroke-width: 80px; }
-
-  .search-btn::after {
-    content: "";
-    position: absolute;
-    top: 1px;
-    right: -20px;
-    background: hsla(0, 0%, 100%, 0.1);
-    width: 2px;
-    height: 14px;
-  }
 
 
 
@@ -1016,8 +995,6 @@ body.active { overflow: hidden; }
 
   .movies-list { grid-template-columns: repeat(3, 1fr); }
 
-  .events-list { grid-template-columns: repeat(3, 1fr); }
-
 
 
   .header.active { padding-block: 5px; }
@@ -1030,6 +1007,7 @@ body.active { overflow: hidden; }
     all: unset;
     margin-left: auto;
   }
+  .header
 
   .header-actions {
     order: 1;
@@ -1315,7 +1293,15 @@ body.active { overflow: hidden; }
   font-size: 13px;
   color: var(--red, #ff2d55);
 }
-
+.events{
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), 
+    url("../images/Cinema_Background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-block: var(--section-padding);
+  margin-top: -5%;
+}
 .events-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1324,6 +1310,21 @@ body.active { overflow: hidden; }
   margin-top: 200px;
   list-style: none;
   margin-bottom: 100px;
+}
+
+/* Medium screens */
+@media (max-width: 1024px) {
+  .events-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens / mobile */
+@media (max-width: 600px) {
+  .events-list {
+    grid-template-columns: 1fr; /* Stack vertically */
+    margin-top: 50px; /* Optional adjustment */
+  }
 }
 .event-detail {
   background: 
@@ -1399,4 +1400,445 @@ body.active { overflow: hidden; }
   border-radius: 4px;
   margin-bottom: 30px;
 }
+.cinema-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      width: 100%;
+      padding: 40px 0;
+    }
 
+    .cinema-card {
+      background: var(--eerie-black);
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    .cinema-card h3 {
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .cinema-map {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .cinema-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+.club {
+  background:
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), /* overlay with 50% transparency */
+    url("../images/cinema_club.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-block: var(--section-padding);
+  margin-top: -50px;
+}
+
+.club-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0 20px;
+}
+
+.club-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--banner-bg, #111);
+  border-radius: 12px;
+  padding: 25px;
+  min-height: 180px;
+  border: 1px solid rgba(255,49,49,0.6);
+  transition: 0.2s ease;
+}
+
+.club-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.06);
+}
+
+.card-icon {
+  margin-right: 15px; /* adds space between icon and text */
+  display: flex;
+  align-items: center;
+}
+
+.card-icon ion-icon {
+  font-size: 40px;
+  color: #fff;
+  opacity: 0.9;
+}
+
+
+.club-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.club-content h3 {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.club-content p {
+  opacity: 0.8;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.card-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+  .club-list {
+    grid-template-columns: 1fr;
+  }
+
+  .club-card {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+  }
+
+  .club-content {
+    margin-right: 0;
+    margin-bottom: 12px;
+
+  }
+
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .club-card {
+    padding: 16px;
+  }
+
+  .card-icon ion-icon {
+    font-size: 32px;
+  }
+
+  .club-content h3 {
+    font-size: 1.05rem;
+  }
+
+  .club-content p {
+    font-size: 0.9rem;
+  }
+}
+/* Overlay for the expanded card */
+.payment-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* The payment card itself */
+.payment-card {
+  background: #111;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  border: 1px solid rgba(255,49,49,0.6);
+  animation: slideIn 0.2s ease;
+}
+
+.payment-card h3 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.payment-card button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #ff3131;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.payment-card button:hover {
+  background: #ff5656;
+}
+
+.payment-card .close-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  margin-top: 20px;
+  color: #fff;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.join-btn {
+      display: block;
+      margin: 40px auto;
+      padding: 14px 32px;
+      font-size: 18px;
+      color: #fff;
+      background: #e50914;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .join-btn:hover {
+      background: #b20710;
+    }
+
+    /* MODAL */
+    .payment-modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+    }
+
+    .payment-content {
+      background: #111;
+      color: white;
+      padding: 25px;
+      width: 350px;
+      margin: 10% auto;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+    }
+
+    .payment-content input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      background: #222;
+      border: 1px solid #444;
+      border-radius: 5px;
+      color: white;
+      font-size: 15px;
+    }
+
+    .pay-btn {
+      width: 100%;
+      padding: 12px;
+      background: #e50914;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+
+    .pay-btn:hover {
+      background: #b20710;
+    }
+
+    .close {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+.rent-container {
+  position: relative;
+    min-height: 100vh; /* full viewport height */
+    background:
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+        url("../images/cinema_club.jpg") no-repeat center top;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container-swiper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #111;
+}
+.rent-p{
+    text-align: center;
+    color: var(--white);
+    line-height: 1.5;
+    margin-top: 70px;
+    max-width: 700px; 
+    font-size: 1.1rem;
+    font-weight: 300;     
+    opacity: 0.9;    
+}
+.p-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: -30px;
+}   
+
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+    padding-bottom: 100px ;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #f05353;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge{
+    color: #ff3131;
+    margin: 16px 0 18px;
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    background: #dde4ff;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title{
+    font-size: 16px;
+    color: #000;
+    font-weight: 100;
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: #f05353;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    border: 2px solid #f05353;
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color: #fff;
+    background: #f05353;
+}
+
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #f05353;
+}
+
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button{
+    color: #f05353;
+    margin-top: -75px;
+} 
+
+@media screen and (max-width: 768px){
+    .card-wrapper{
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button{
+        display: none;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
