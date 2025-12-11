@@ -1,0 +1,86 @@
+:root {
+  --main: #ffffff;
+  --bg: hsl(207, 19%, 11%);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+  background: var(--bg);
+  color: var(--main);
+}
+
+.container {
+  max-width: 980px;
+  margin: 40px auto;
+  padding: 20px;
+  color: var(--main);
+}
+
+header h1,
+nav a,
+.meta,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+footer,
+aside,
+section {
+  color: var(--main) !important;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+main,
+aside {
+  background: transparent;
+  border: 1px solid var(--main);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+a {
+  color: var(--main);
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #141726;
+  color: #ff2f6b;
+  border: 1px solid #ff2f6b;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-button:hover {
+  background: #ff2f6b;
+  color: #0d0f1a;
+}
