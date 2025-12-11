@@ -1,7 +1,7 @@
 const events = [
   {
     id: 1,
-    image: "",
+    image: "/images/birthday.png",
     title: "Celebrate Your Birthday at MonoFlix",
     date: "25.07.2025 — 31.12.2025",
     description: `✨ Surprise your little one with a magical birthday at MonoFlix! ✨
@@ -87,6 +87,7 @@ All you need is your student ID!`
     id: 6,
     title: "Cinema Day — Every Tuesday",
     date: "03.12.2024 — 31.12.2025",
+    image: "/images/every_tuesday.png",
     description: `Follow your favorite movies at special prices.
 
 Cinema visitors every Tuesday can buy tickets for their favorite movies at reduced prices.
@@ -155,7 +156,27 @@ Enjoy our Super Saver deal for the upcoming month. -> 07.12.2025`
 19 December: Premiere of the movie "Avatar: Fire and Ash" ⚔️  
 🎁 With amazing rewards!`
   }
-];
+,
+{
+  id: 11,
+  title: "Cinema Day — Every Sunday",
+  date: "03.12.2024 — 31.12.2025",
+  image: "/images/sunday.png",
+  description: `Follow your favorite movies at special prices.
+
+Cinema visitors every Sunday can buy tickets for their favorite movies at reduced prices.
+
+In Cineplexx Prishtina starting from:  
+• 2D movies from €3.20  
+• 3D movies from €4.30  
+• 2D IMAX movies only €6  
+• 3D IMAX movies only €8  
+
+In Cineplexx Prizren starting from:  
+• 2D movies from €2.80  
+• 3D movies from €3.90`
+}];
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const eventsList = document.getElementById("events-list");
