@@ -154,7 +154,61 @@ const movies = [
     description:
       "Judy Hopps and Nick Wilde reunite to solve a new case that threatens the harmony between predators and prey in Zootopia.",
     trailer:"https://www.youtube.com/watch?v=BjkIOU5PhyQ"
+  },
+
+  {
+    id: 13,
+    title: "Green Book",
+    year: 2018,
+    duration: "130 min",
+    rating: "8.2",
+    genre: ["Adventure", "Comedy"],
+    image: "/images/13.jpg",
+    background_image: "/images/greenbook_bg.jpg",
+    description:
+      "A working-class Italian-American bouncer becomes the driver for an African-American classical pianist on a tour of venues through the 1960s American South.",
+    trailer:"https://youtu.be/QkZxoko_HC0?si=-HE7nfolb-DsRLPv"
+  },
+  {
+    id: 14,
+    title: "The Little Prince",
+    year: 2015,
+    duration: "108 min",
+    rating: "7.6",
+    genre: ["Coming-of-Age", "Fantasy Epic", "Animation"],
+    image: "/images/14.jpg",
+    background_image: "/images/thelittleprince_bg.jpg",
+    description:
+      "A little girl lives in a very grown-up world with her mother, who tries to prepare her for it. Her neighbor, the Aviator, introduces the girl to an extraordinary world where anything is possible, the world of the Little Prince.",
+    trailer:"https://youtu.be/9gARHWfXE40?si=E42_cv_L5yiHSKUc"
+  },
+    {
+    id: 15,
+    title: "GoodFellas",
+    year: 1990,
+    duration: "145 min",
+    rating: "8.2",
+    genre: ["Crime", "Biography", "Gangster"],
+    image: "/images/15.jpg",
+    background_image: "/images/goodfellas_bg.jpeg",
+    description:
+      "The story of Henry Hill and his life in the mafia, covering his relationship with his wife Karen and his mob partners Jimmy Conway and Tommy DeVito.",
+    trailer:"https://youtu.be/2ilzidi_J8Q?si=JXZ2iGh1Q3z1t7cb"
+  },
+    {
+    id: 16,
+    title: "Léon: The Professional",
+    year: 1994,
+    duration: "110 min",
+    rating: "8.5",
+    genre: ["Gangster", "Action", "Thriller"],
+    image: "/images/16.jpg",
+    background_image: "/images/leon_bg.jpg",
+    description:
+      "When her family is murdered by a group of corrupt officers led by the tyrannical Norman Stansfield, a young 12-year-old girl enlists the help of an Italian-American hitman to seek revenge.",
+    trailer:"https://youtu.be/aNQqoExfQsg?si=UrcJkXiyFHGgQwwT"
   }
+  
 ];
 
   const upcomingMoviesList = document.getElementById("upcoming-movies-list");
